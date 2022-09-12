@@ -1,0 +1,36 @@
+
+data=JSON.parse(response);
+                        $("#idOffrande").val(data.idOffrande);
+                        $("#etypeOffrande").val(data.typeOffrande);
+                        $("#emontantOffrande").val(data.montantOffrande);
+                        $("#eCulteId").val(data.CulteId);
+
+
+$id=$_POST['editoffrande_id'];
+            
+            $row=$user->editeroffrande($id);
+            echo json_encode($row);
+
+
+data=JSON.parse(response);
+                        Swal.fire({
+                            title:'<strong>Service :ID('+data.idService+')</strong>',
+                            type:'info',
+                            html:'<b>Service :</b>'+data.Service+'</br></br><b>Eglise:</b>'+data.Eglise,
+                        });
+
+                        Swal.fire({
+                                title:'Offrande mise à jour avec succès !',
+                                type:'success'
+                            });
+                            $("#edit-offrande-form")[0].reset();
+                            $("#EditOffrandeModal").modal('hide');
+                            afficherOffrandes();
+
+
+Swal.fire(
+                                    'Supprimer Offrande !',
+                                    'Offrande supprimée avec succès.',
+                                    'success'
+                                )
+                                afficherOffrandes();
