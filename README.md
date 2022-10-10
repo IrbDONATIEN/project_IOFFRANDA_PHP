@@ -18,12 +18,11 @@ The application is structured as follows:
 
 Here is the demo of the management interface of the application for a modification of an information.
 
-![preview img](/accueil.PNG)
-
+![accueil](https://user-images.githubusercontent.com/111361566/194840750-107b5f19-3da5-4758-9b79-9cf108a399e1.PNG)
 
 Here is the demo of the application management interface preview to see the information.
 
-![preview img](/demo.PNG)
+![demo](https://user-images.githubusercontent.com/111361566/194840763-867f5eb1-e64d-4bd1-8c9d-4fc241d45923.PNG)
 
 ## Getting Started
 
